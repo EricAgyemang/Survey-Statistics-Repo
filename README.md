@@ -139,5 +139,5 @@ ________________________________________
 ________________________________________
 
 # REFERENCE
-. Lumley, T. (2011). Complex surveys: a guide to analysis using R (Vol. 565). John Wiley & Sons.
+Lumley, T. (2011). Complex surveys: a guide to analysis using R (Vol. 565). John Wiley & Sons.
 
