@@ -122,8 +122,7 @@ Using the survey package:
 ________________________________________
 
 # Technical notes and comparisons with other software 
-  Some [examples](http://r-survey.r-forge.r-project.org/survey/ucla-examples.pdf) (in PDF) translated from Stata and SUDAAN examples at [UCLA Academic Technology Services]  
-  (http://www.ats.ucla.edu/stat/survey/survey_howtochoose.htm).
+  Some [examples](http://r-survey.r-forge.r-project.org/survey/ucla-examples.pdf) (in PDF) translated from Stata and SUDAAN examples at [UCLA Academic Technology Services](http://www.ats.ucla.edu/stat/survey/survey_howtochoose.htm).
 
 - Notes on the [sparse matrix algorithms](http://r-survey.r-forge.r-project.org/survey/ht-sparse.pdf) used in version 3.15 for two-phase designs (and perhaps more widely in future     versions).
 
