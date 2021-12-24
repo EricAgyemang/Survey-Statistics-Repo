@@ -81,16 +81,27 @@ A port of a much older version of the survey package (version 3.6-8) to S-PLUS 8
 
 # Features: 
   •	Means, totals, ratios, quantiles, contingency tables, regression models, loglinear models, survival curves,rank tests, for the whole sample and for domains. 
+  
   •	Variances by Taylor linearization or by replicate weights (BRR, jackknife, bootstrap, multistage bootstrap, or user-supplied) 
+  
   •	Multistage sampling with or without replacement. 
+  
   •	PPS sampling with or without replacement: Horvitz-Thompson and Yates-Grundy estimators and a range of approximations. 
+  
   •	Post-stratification, generalized raking/calibration, GREG estimation, trimming of weights. 
+  
   •	Two-phase designs. Estimated weights for augmented IPW estimators. 
+  
   •	Graphics 
+  
   •	Support for using multiply imputed data 
+  
   •	Database-backed design objects for large data sets (now with replicate weights, too) 
+  
   •	Some support for parallel processing on multicore computers. 
+  
   •	Multivariate analysis: principal components, factor analysis (experimental). 
+  
   •	Likelihood ratio (Rao-Scott) tests for glms, Cox models, loglinear models. 
 
 
