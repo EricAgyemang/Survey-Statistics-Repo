@@ -4,7 +4,7 @@ Statistical Survey: Analysis of Simple and Complex Survey Samples
 # Website
 [Please_go_to](http://my.ilstu.edu/~mxu2/Spring-2020/MAT450/MTH450.html)
 
-# survey: Analysis of Complex Survey Samples
+# Survey: Analysis of Complex Survey Samples
 Summary statistics, two-sample tests, rank tests, generalised linear models, cumulative link models, Cox models, loglinear models, and 
 general maximum pseudolikelihood estimation for multistage stratified, cluster-sampled, unequally weighted survey samples. Variances by Taylor
 series linearisation or replicate weights. Post-stratification, calibration, and raking. Two-phase subsampling designs. Graphics. PPS sampling without 
