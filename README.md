@@ -124,17 +124,20 @@ ________________________________________
 # Technical notes and comparisons with other software 
 Some [examples](http://r-survey.r-forge.r-project.org/survey/ucla-examples.pdf) (in PDF) translated from Stata and SUDAAN examples at [UCLA Academic Technology Services](http://www.ats.ucla.edu/stat/survey/survey_howtochoose.htm).
 
-  - Notes on the [sparse matrix algorithms](http://r-survey.r-forge.r-project.org/survey/ht-sparse.pdf) used in version 3.15 for two-phase designs (and perhaps more widely in future     versions).
+- Notes on the [sparse matrix algorithms](http://r-survey.r-forge.r-project.org/survey/ht-sparse.pdf) used in version 3.15 for two-phase designs (and perhaps more widely in future     versions).
 
-  - Notes on [standard errors for survival curves](http://r-survey.r-forge.r-project.org/survey/survcurve.pdf).
+- Notes on [standard errors for survival curves](http://r-survey.r-forge.r-project.org/survey/survcurve.pdf).
   
 
-. A 2009 [CDC report](http://www.cdc.gov/HealthyYouth/YRBS/pdf/YRBS_analysis_software.pdf) compared five *other* survey analysis packages in the context of the Youth Risk Behaviors Survey. I have written an [extension](http://r-survey.r-forge.r-project.org/survey/YRBS-report-extension.pdf) that does the same feature comparisons and results comparisons with R and the survey package. Some of this is copied from the CDC report (which I believe is in the public domain), but they are (of course) not responsible for any of the conclusions or results.
+ . A 2009 [CDC report](http://www.cdc.gov/HealthyYouth/YRBS/pdf/YRBS_analysis_software.pdf) compared five *other* survey analysis packages in the context of the Youth Risk Behaviors    Survey. I have written an [extension](http://r-survey.r-forge.r-project.org/survey/YRBS-report-extension.pdf) that does the same feature comparisons and results comparisons with R    and the survey package. Some of this is copied from the CDC report (which I believe is in the public domain), but they are (of course) not responsible for any of the conclusions 
+   or results.
 
-. Anthony Damico has R scripts for downloading and analysing major US government surveys at [Github](https://github.com/ajdamico/usgsd). He reported on [comparisons of the survey package with SAS, Stata, SUDAAN](http://journal.r-project.org/archive/2009-2/RJournal_2009-2_Damico.pdf) in [The R Journal](http://journal.r-project.org/) 1(2) 37-45 
+ . Anthony Damico has R scripts for downloading and analysing major US government surveys at [Github](https://github.com/ajdamico/usgsd). He reported on [comparisons of the survey 
+   package with SAS, Stata, SUDAAN](http://journal.r-project.org/archive/2009-2/RJournal_2009-2_Damico.pdf) in [The R Journal](http://journal.r-project.org/) 1(2) 37-45 
 
 
 ________________________________________
 
-
+# REFERENCE
+. Lumley, T. (2011). Complex surveys: a guide to analysis using R (Vol. 565). John Wiley & Sons.
 
