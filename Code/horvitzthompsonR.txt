@@ -1,0 +1,27 @@
+# Calculates the HT estimators for Example 6.10 in Chapter 6
+
+horvitz <- function(yvec,pii,piik) {
+   # Calculates the one-stage HT estimator and three variance estimates for data in yvec
+   # pii is vector of inclusion probabilities
+   # piik is n x n matrix of joint inclusion probabilities
+
+   yoverpi <- yvec/pii
+   htest <- sum(yoverpi)
+   piik <- as.matrix(piik)
+   diag(piik) <- pii  # Set pi_{ij} = pi_i so can use simpler version of var formulas
+   nn <- length(yvec)
+   onen <- rep(1,nn)
+   htvar <- t(yoverpi)%*%(onen %*% t(onen) - (pii %*%t(pii))/piik )%*% yoverpi
+
+   bmat <- onen %*% t(onen) - (pii %*%t(pii))/piik
+   sygvar <- -( crossprod(yoverpi^2,apply(bmat,2,sum)) - t(yoverpi)%*%bmat%*%yoverpi)
+   
+   wrvar <- var(nn*yoverpi)/nn
+
+   list(htest=htest,wrvar=wrvar,htvar=htvar,sygvar=sygvar)
+
+}
+
+agpps <- read.table(file.choose(),header=T,sep=",")
+
+horvitz(yvec=agpps$acres92,pii=agpps$pii,piik = agpps[,8:22])

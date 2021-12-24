@@ -1,0 +1,30 @@
+License Agreement for Brooks/Cole, a division of Cengage Learning.
+
+You the customer, and Brooks/Cole incur certain benefits, rights, and obligations to each other when you open this package and use the materials it contains. BE SURE TO READ THE LICENSE AGREEMENT CAREFULLY, SINCE BY USING THE SOFTWARE YOU INDICATE YOU HAVE READ, UNDERSTOOD, AND ACCEPTED THE TERMS OF THIS AGREEMENT.
+
+Your rights:
+
+1. You enjoy a non-exclusive license to use the enclosed materials on a single computer that is not part of a network or multi-machine system in consideration of the payment of the required license fee, (which may be included in the purchase price of an accompanying print component), and your acceptance of the terms and conditions of this agreement.
+2. You acknowledge that you do not own the program/data recorded within the downloadable. You also acknowledge that the program/data is furnished "AS IS," and contains copyrighted and/or proprietary and confidential information of Brooks/Cole, a division of Cengage Learning.
+3. If you do not accept the terms of this license agreement you must not install the software. 
+
+There are limitations on your rights:
+
+1. You may not copy or print the program/data for any reason whatsoever, except to install it on a hard drive on a single computer, unless copying or printing is expressly permitted in writing or statements recorded within the downloadable.
+2. You may not revise, translate, convert, disassemble, or otherwise reverse engineer the program/data.
+3. You may not sell, license, rent, loan, or otherwise distribute or network the program/data.
+4. You may not export or re-export the program/data, or any component thereof, without the appropriate U.S. or foreign government licenses. Should you fail to abide by the terms of this license or otherwise violate Brooks/Cole's rights, your license to use it will become invalid.
+
+U.S. Government Restricted Rights
+
+The enclosed multimedia, software, and associated documentation are provided with RESTRICTED RIGHTS.  Use, duplication, or disclosure by the Government is subject to restrictions as set forth in subdivision (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.277.7013 for DoD contracts, paragraphs (c) (1) and (2) of the Commercial Computer Software-Restricted Rights clause in the FAR (48 CFR 52.227-19) for civilian agencies, or in other comparable agency clauses.  The proprietor of the enclosed multimedia, software, and associated documentation is Brooks/Cole, 10 Davis Drive, Belmont, California 94002.
+
+Limited Warranty
+
+THESE ARE YOUR SOLE REMEDIES FOR ANY BREACH OF WARRANTY. EXCEPT AS SPECIFICALLY PROVIDED ABOVE, BROOKS/COLE, A DIVISION OF CENGAGE LEARNING AND THE THIRD PARTY SUPPLIERS MAKE NO WARRANTY OR REPRESENTATION, EITHER EXPRESSED OR IMPLIED, WITH RESPECT TO THE PRODUCT, INCLUDING ITS QUALITY, PERFORMANCE, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.  The product is not a substitute for human judgment.  Because the software is inherently complex and may not be completely free of errors, you are advised to validate your work.  IN NO EVENT WILL BROOKS/COLE OR ANY THIRD PARTY SUPPLIERS BE LIABLE FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PRODUCT OR DOCUMENTATION, even if advised of the possibility of such damages.  Specifically, Brooks/Cole is not responsible for any costs including, but not limited to, those incurred as a result of lost profits or revenue, loss of use of the computer program, loss of data, the costs of recovering such programs or data, the cost of any substitute program, claims by third parties, or for other similar costs.  In no case shall Brooks/Cole's liability exceed the amount of the license fee paid.  THE WARRANTY AND REMEDIES SET FORTH ABOVE ARE EXCLUSIVE AND IN LIEU OF ALL OTHERS, ORAL OR WRITTEN, EXPRESS OR IMPLIED.  Some states do not allow the exclusion or limitation of implied warranties or limitation of liability for incidental or consequential damage, so that the above limitations or exclusion may not apply to you.
+
+This license is the entire agreement between you and Brooks/Cole and it shall be interpreted and enforced under California law.  Should you have any questions concerning this License Agreement, write to Technology Department, Brooks/Cole, 10 Davis Drive, Belmont, California  94002.
+
+
+
+(NOTE: Select Word Wrap under Edit if using NotePad)

@@ -1,0 +1,96 @@
+lrt<-function(u, x,y,lrti, alpha=.05 )
+{
+    # Extend the y vector so the last element is u
+    # Extend the x matrix so the last row is 0,0,...,0.
+    # Fit the generalized linear model, then calculate the change in likelihood
+        dev <- glm(c(y,u)~rbind(x,rep(0,ncol(x))),family=poisson(link="log"))$deviance
+        1 - pchisq(dev -lrti, 1) - alpha
+}
+
+captureci <- function(xmat, y,alpha = 0.05)
+{
+
+# Estimates missing cell and N.
+# y is vector of cell counts; xmat is matrix of explanatory variables
+# Coding should be done so that missing cell has 0 for all columns of xmat.
+# Estimates the lower and upper critical values for u
+# Calculates confidence interval for u, and hence gives
+# confidence interval for N
+
+   glimfit<-glm(y~xmat[1:length(y),],family=poisson(link="log"))
+   sumobs<-sum(y)
+   predmiss <- exp(glimfit$coef[1] )
+   lrti<-glimfit$deviance
+   lowroot<- uniroot(lrt,lower=0,upper=predmiss,x=xmat,y=y,lrti=lrti,alpha=alpha)$root
+   highroot<-uniroot(lrt,lower=predmiss,upper=50*(sumobs+predmiss),
+              x=xmat,y=y,lrti=lrti,alpha=alpha)$root
+   list(u = predmiss,Nhat = predmiss+sumobs,deviance = lrti,"Lower CL for u"=lowroot,
+             "Upper CL for u"= highroot,"Lower CL for N"=lowroot+sumobs,
+             "Upper CL for N"=highroot+sumobs)  
+ }
+
+# Construct the confidence interval on page 499.
+
+# Construct the X matrix where 1 = "in sample", 0 = "not in sample"
+# For our example, xmat has two columns; the  row (0,0) would represent
+# the category of not being in either sample.
+
+xmat <- cbind(c(1,1,0),c(1,0,1))
+y <- c(20,180,80)
+
+captureci(xmat,y)
+
+######  Bootstrap confidence intervals for two samples 
+
+
+converty <- function(count,sample1ind,sample2ind) {
+    # Convert count from sample 2 to vector of 1s and 0s
+    # where y = 1 if in sample1 and 0 otherwise
+
+    n2 <- crossprod(sample2ind,count)
+    bothsamp <- count[sample1ind==1 & sample2ind==1]
+    y <- c(rep(1,bothsamp),rep(0,n2-bothsamp))
+    y
+}
+
+nchapman <- function(y,n1) { 
+   # Calculates Chapman's estimate of population size 
+   # y = vector from sample 2 of length n_2, with entries 
+   #     0 if observation not in sample 1, 1 if observation in sample 1
+   # n1 = size of sample 1.
+   # Return:  Chapman's estimate
+
+   (n1+1)*(length(y)+1)/(sum(y)+1) - 1
+}
+
+nmle <- function(y,n1) { 
+   # Calculates maximum likelihood estimate of population size 
+   # y = vector from sample 2 of length n_2, with entries 
+   #     0 if observation not in sample 1, 1 if observation in sample 1
+   # n1 = size of sample 1.
+   # Return:  MLE of N
+   # Note: need to be careful with MLE in small samples since can be 0
+
+   if (sum(y) == 0) stop("There are no observations in both samples.")
+   n1*length(y)/sum(y) 
+}
+
+
+captureboot <- function(y,n1,nboot=999,alpha=.05,nfunc=nchapman) {
+   # Calculates CI for estimate of N
+   # 
+   # y = vector from sample 2 of length n_2, with entries 
+   #     0 if observation not in sample 1, 1 if observation in sample 1
+   # n1 = size of sample 1.
+
+    Nhat <- nfunc(y,n1) # Calculate point estimate
+    n2 <- length(y)
+    bootsamp <- matrix(sample(y, size = n2 * nboot, replace = TRUE), nrow = nboot)
+    Nstar <- sort(apply(bootsamp, 1, nfunc, n1))
+    lvalue <- round(nboot*alpha/2)
+    uvalue <- round(nboot*(1-alpha/2))
+    list(Nhat = Nhat, bootreps = Nstar, lcl = Nstar[lvalue], ucl = Nstar[uvalue])
+}
+
+bootout <- captureboot(converty(y,xmat[,1],xmat[,2]),crossprod(xmat[,1],y),nboot=999,
+        nfunc=nmle)
