@@ -20,10 +20,6 @@ replacement. Principal components, factor analysis.
 # *Suggests:*	
 [foreign](http://cran.fhcrc.org/web/packages/foreign/index.html), [MASS](http://cran.fhcrc.org/web/packages/MASS/index.html), [KernSmooth](http://cran.fhcrc.org/web/packages/KernSmooth/index.html),
 [hexbin](http://cran.fhcrc.org/web/packages/hexbin/index.html), [RSQLite](http://cran.fhcrc.org/web/packages/RSQLite/index.html), [quantreg](http://cran.fhcrc.org/web/packages/quantreg/index.html), parallel, [CompQuadForm](http://cran.fhcrc.org/web/packages/CompQuadForm/index.html), [DBI](http://cran.fhcrc.org/web/packages/DBI/index.html), [AER](http://cran.fhcrc.org/web/packages/AER/index.html)
-
-
-# *Author:*	Thomas Lumley
-*Maintainer:*	"Thomas Lumley" <t.lumley at auckland.ac.nz>
 *License:*	[GPL-2](http://cran.fhcrc.org/web/licenses/GPL-2) | [GPL-3](http://cran.fhcrc.org/web/licenses/GPL-3)
 *URL:*	[R-Survey-Project](http://r-survey.r-forge.r-project.org/survey/)
 *Citation:*	[survey citation info](http://cran.fhcrc.org/web/packages/survey/citation.html)
@@ -54,8 +50,6 @@ Obsolete formulas for two-phase variances Analysing PPS designs [A survey analys
 
 # *Reverse imports:*
 [aGE](http://cran.fhcrc.org/web/packages/aGE/index.html), [anthro](http://cran.fhcrc.org/web/packages/anthro/index.html), [capm](http://cran.fhcrc.org/web/packages/capm/index.html), [causaldrf](http://cran.fhcrc.org/web/packages/causaldrf/index.html), [convey](http://cran.fhcrc.org/web/packages/convey/index.html), [cregg](http://cran.fhcrc.org/web/packages/cregg/index.html), [dgo](http://cran.fhcrc.org/web/packages/dgo/index.html), [DHS.rates](http://cran.fhcrc.org/web/packages/DHS.rates/index.html), [dvmisc](http://cran.fhcrc.org/web/packages/dvmisc/index.html), [EffectLiteR](http://cran.fhcrc.org/web/packages/EffectLiteR/index.html), [effects](http://cran.fhcrc.org/web/packages/effects/index.html), [egor](http://cran.fhcrc.org/web/packages/egor/index.html), [GB2](http://cran.fhcrc.org/web/packages/GB2/index.html), [GJRM](http://cran.fhcrc.org/web/packages/GJRM/index.html), [httk](http://cran.fhcrc.org/web/packages/httk/index.html), [ICS](http://cran.fhcrc.org/web/packages/ICS/index.html), [ICtest](http://cran.fhcrc.org/web/packages/ICtest/index.html), [jskm](http://cran.fhcrc.org/web/packages/jskm/index.html), [jsmodule](http://cran.fhcrc.org/web/packages/jsmodule/index.html), [jstable](http://cran.fhcrc.org/web/packages/jstable/index.html), [mase](http://cran.fhcrc.org/web/packages/mase/index.html), [MatchThem](http://cran.fhcrc.org/web/packages/MatchThem/index.html), 
-
-# *Reverse imports:*
 [microsynth](http://cran.fhcrc.org/web/packages/microsynth/index.html), [OmnibusFisher](http://cran.fhcrc.org/web/packages/OmnibusFisher/index.html), [paramhetero](http://cran.fhcrc.org/web/packages/paramhetero/index.html), [Plasmode](http://cran.fhcrc.org/web/packages/Plasmode/index.html), [PNADcIBGE](http://cran.fhcrc.org/web/packages/PNADcIBGE/index.html), [poliscidata](http://cran.fhcrc.org/web/packages/poliscidata/index.html), [pricesensitivitymeter](http://cran.fhcrc.org/web/packages/pricesensitivitymeter/index.html), [rareGE](http://cran.fhcrc.org/web/packages/rareGE/index.html), [RNHANES](http://cran.fhcrc.org/web/packages/RNHANES/index.html), [robsurvey](http://cran.fhcrc.org/web/packages/robsurvey/index.html), [srvyr](http://cran.fhcrc.org/web/packages/srvyr/index.html), [StroupGLMM](http://cran.fhcrc.org/web/packages/StroupGLMM/index.html), [SUMMER](http://cran.fhcrc.org/web/packages/SUMMER/index.html), [SvyNom](http://cran.fhcrc.org/web/packages/SvyNom/index.html), [tab](http://cran.fhcrc.org/web/packages/tab/index.html), [tableone](http://cran.fhcrc.org/web/packages/tableone/index.html), [Zelig](http://cran.fhcrc.org/web/packages/Zelig/index.html)
 
 # *Reverse suggests:*
